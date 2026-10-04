@@ -19,10 +19,10 @@ import streamlit as st
 #    margin-top: -50px;
 #}
 #</style>
-#""", unsafe_allow_html=True)*/
+#""", unsafe_allow_html=True)
 
 from src.components.header import header_home
-
+from src.components.footer import footer_home
 from src.screens.home_screen import home_screen
 from src.screens.teacher_screen import teacher_screen
 from src.screens.student_screen import student_screen

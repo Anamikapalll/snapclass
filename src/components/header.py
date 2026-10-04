@@ -44,10 +44,10 @@ def header_home():
 
                 .title {{
                     text-align: center;
-                    color: #30EFF;
-                    font-size: 28px;
-                    line-height: 1;
-                    margin-top: 10px;
+                    color: #30E3FF;
+                    font-size: 20px;
+                    line-height: 0.5;
+                    margin-top: 5px;
                 }}
             </style>
             """,
