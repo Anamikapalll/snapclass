@@ -1,55 +1,27 @@
-
 import streamlit as st
-import base64
 
 
 def header_home():
 
-    # Read image
-    with open("src/components/logo.jpeg", "rb") as f:
-        image = base64.b64encode(f.read()).decode()
+    logo_url = "https://i.ibb.co/YTYGn5qV/logo.png"
+    
+    st.markdown(f"""
+        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:30px; margin-top:30px">
+            <img src='{logo_url}' style='height:100px;' />
+            <h1 style='text-align:center; color:#E0E3FF'>SNAP<br/>CLASS</h1>
+        </div>   
+                
+                """, unsafe_allow_html=True)
 
-    col1, col2, col3 = st.columns([1, 2, 1])
 
-    with col2:
+def header_dashboard():
 
-        st.markdown(
-            f"""
-            <div class="logo-container">
-                <img src="data:image/jpeg;base64,{image}" class="logo">
-            </div>
-
-            <h1 class="title">
-                SNAP<br>CLASS
-            </h1>
-
-            <style>
-                .logo-container {{
-                    text-align: center;
-                    margin-bottom: 15px;
-                    margin-top: 30px;
-                }}
-
-                .logo {{
-                    width: 100px;
-                    height: 100px;
-                    object-fit: contain;
-
-                    border-radius: 20px;
-
-                    border: 3px solid #E03FFF;
-
-                    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
-                }}
-
-                .title {{
-                    text-align: center;
-                    color: #30E3FF;
-                    font-size: 20px;
-                    line-height: 0.5;
-                    margin-top: 5px;
-                }}
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
+    logo_url = "https://i.ibb.co/YTYGn5qV/logo.png"
+    
+    st.markdown(f"""
+        <div style="display:flex; align-items:center; justify-content:center; gap:10px">
+            <img src='{logo_url}' style='height:85px;' />
+            <h2 style='text-align:left; color:#5865F2'>SNAP<br/>CLASS</h1>
+        </div>   
+                
+                """, unsafe_allow_html=True)
